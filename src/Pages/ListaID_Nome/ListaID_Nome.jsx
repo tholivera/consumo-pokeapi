@@ -43,7 +43,7 @@ export default function ListaID_Nome() {
 
     return (
         <>
-            <Container className="bg" >
+            <Box className="bg" >
                 <Container maxWidth="xs">
                     <Card className="card">
                         <Box display='flex' justifyContent="center" paddingTop={10} >
@@ -127,13 +127,13 @@ export default function ListaID_Nome() {
                             </Link>
                             <Link to='/lista-todos' className="text-decorator-none">
                                 <Button className="botao">
-                                    Listar todos os Pokemóns
+                                    Listar todos os Pokémons
                                 </Button>
                             </Link>
                         </Box>
                     </Card >
                 </Container>
-            </Container >
+            </Box >
 
         </>
     );

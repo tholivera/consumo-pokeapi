@@ -6,7 +6,7 @@ import "./LandingPage.css";
 export default function LandingPage() {
     return (
         <>
-            <Container className="bg" >
+            <Box className="bg" >
                 <Container maxWidth="xs">
                     <Card className="card">
                         <Box display='flex' justifyContent="center" paddingTop={10} >
@@ -15,7 +15,7 @@ export default function LandingPage() {
                         <Box display='flex' justifyContent="center" paddingTop={10} >
                             <Link to='/lista-todos' className="text-decorator-none">
                                 <Button className="botao">
-                                    TODOS OS POKEMÓNS
+                                    TODOS OS POKÉMONS
                                 </Button>
                             </Link>
                             <Link to='/lista-id-nome' className="text-decorator-none">
@@ -26,7 +26,7 @@ export default function LandingPage() {
                         </Box>
                     </Card >
                 </Container>
-            </Container>
+            </Box>
         </>
     );
 }
