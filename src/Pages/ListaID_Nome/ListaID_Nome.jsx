@@ -28,7 +28,7 @@ export default function ListaID_Nome() {
         try {
             const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
             const res = await axios.get(url);
-            toArray.push(res.data);git 
+            toArray.push(res.data);
             setPokemonType(res.data.types[0].type.name);
             setPokemonData(toArray);
         } catch (e) {
