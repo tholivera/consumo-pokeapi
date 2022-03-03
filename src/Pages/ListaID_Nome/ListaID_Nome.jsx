@@ -8,8 +8,6 @@ import axios from "axios";
 
 
 export default function ListaID_Nome() {
-
-
     const [pokemon, setPokemon] = useState("pikachu");
     const [pokemonData, setPokemonData] = useState([]);
     const [pokemonType, setPokemonType] = useState("");
