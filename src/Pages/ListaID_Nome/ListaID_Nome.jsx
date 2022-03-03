@@ -16,6 +16,8 @@ export default function ListaID_Nome() {
     const handleClose = () => setOpen(false);
 
 
+   
+
     const handleChange = (e) => {
         setPokemon(e.target.value.toLowerCase());
     };
@@ -23,6 +25,7 @@ export default function ListaID_Nome() {
         e.preventDefault();
         getPokemon();
     };
+
     const getPokemon = async () => {
         const toArray = [];
         try {
@@ -36,10 +39,6 @@ export default function ListaID_Nome() {
         }
     };
     console.log(pokemonData);
-
-
-
-
 
     return (
         <>
@@ -118,7 +117,7 @@ export default function ListaID_Nome() {
                                 })}
                             </Card>
                         </Container>
-                       
+
                         <Box display='flex' justifyContent="center" paddingTop={10} >
                             <Link to='/home' className="text-decorator-none">
                                 <Button className="botao">
