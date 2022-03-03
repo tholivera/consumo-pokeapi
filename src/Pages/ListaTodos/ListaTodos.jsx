@@ -27,7 +27,7 @@ export default function ListaTodos() {
         }
         createPokemonObject(data.results)
     }
-    
+
     useEffect(() => {
         getAllPokemons()
        }, [])
@@ -37,7 +37,7 @@ export default function ListaTodos() {
             <Box className="bg">
                 <Container maxWidth="xs">
                     <Card >
-                        <Box paddingBottom={10}>
+                        <Box paddingBottom={5}>
                             <Box display='flex' justifyContent="center" paddingTop={10} >
                                 <img className="img" src="https://i.imgur.com/FQ8CYwp.png" />
                             </Box>
@@ -130,7 +130,7 @@ export default function ListaTodos() {
 
                             </Box>
 
-                            <Box display='flex' justifyContent="center" alignContent="end" paddingTop={10} >
+                            <Box display='flex' justifyContent="center" alignContent="end" paddingTop={5} >
                                 <Button onClick={() => getAllPokemons()} className="botao">
                                     Ver mais
                                 </Button>
