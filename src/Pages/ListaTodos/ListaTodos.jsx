@@ -2,24 +2,14 @@ import { Container, Card, Box, Typography, Button, Fade, Modal, Backdrop, Grid }
 import { Link } from 'react-router-dom';
 import React, { useState } from "react";
 import "./ListaTodos.css";
-import { DataGrid, GridToolbar } from '@mui/x-data-grid';
-import { useDemoData } from '@mui/x-data-grid-generator';
-
-
 
 export default function ListaTodos() {
-    const VISIBLE_FIELDS = ['Nome', 'ID'];
     const [allPokemons, setAllPokemons] = useState([])
     const [loadMore, setLoadMore] = useState('https://pokeapi.co/api/v2/pokemon/')
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
     
-    const { data } = useDemoData({
-        dataSet: 'Employee',
-        visibleFields: VISIBLE_FIELDS,
-      });
-
     const getAllPokemons = async () => {
         const res = await fetch(loadMore)
         const data = await res.json()
@@ -54,7 +44,7 @@ export default function ListaTodos() {
                             </Link>
                             <Link to='/lista-id-nome' className="text-decorator-none">
                                 <Button className="botao">
-                                    Listar PokÉmOn por ID ou nome
+                                    Listar PokÉmon por ID ou nome
                                 </Button>
                             </Link>
                         </Box>
